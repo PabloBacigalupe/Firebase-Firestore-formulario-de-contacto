@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Local Storage</title>
+  </head>
+  <body>
+    <main>
+      <section id="contactos">
+        <form action="#" method="post" id="miFormulario">
+        <h2>Formulario de Contacto</h2>
+
+        <label for="nombre">Nombre:</label><br />
+        <input type="text" id="nombre" name="nombre" /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" /><br /><br />
+
+        <label for="mensaje">Mensaje:</label><br />
+        <textarea id="mensaje" name="mensaje" rows="5"></textarea><br /><br />
+
+        <label for="imagen">URL Imagen:</label><br />
+        <input type="url" id="imagen" name="imagen" /><br /><br />
+
+        <button type="submit">Enviar</button>
+      </form>
+      <button id="borrar-contacto">Borrar contacto por ID</button>
+      <button id="borrar-datos">Limpiar contactos</button>
+      <button id="borrar-todos">Borrar todos los contactos</button>
+    </section>
+
+    <h3>Contacto guardado</h3>
+    <div id="contactList"></div>
+    
+    </main>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
